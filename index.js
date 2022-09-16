@@ -163,27 +163,38 @@ const menu = [
 ];
 
 const sectionCenter = document.querySelector(".section-center");
-
-const filterBtn = document.querySelectorAll('.filter-btn');
+const container = document.querySelector(".btn-container");
 
 // carregamento dos items
 window.addEventListener("DOMContentLoaded", function(){
     displayMenuItems(menu)
-});
-// filtro dos items
-filterBtn.forEach(function(btn){
-    btn.addEventListener('click', function(e){
-        const category = e.currentTarget.dataset.id
-        const menuCategory = menu.filter(function(menuItem){
-            if(menuItem.category === category){
-                return menuItem;
+    const categories = menu.reduce(function(values,item){
+        if(!values.includes(item.category)){
+            values.push(item.category)
+        }
+        return values
+    },['todos']);
+    const categoryBtn = categories.map(function(category){
+        return `<button class="filter-btn" type="button" 
+        data-id=${category}>${category}</button>`
+    }).join("")
+    container.innerHTML = categoryBtn;
+    const filterBtn = document.querySelectorAll('.filter-btn');
+    // filtro dos items
+    filterBtn.forEach(function(btn){
+        btn.addEventListener('click', function(e){
+            const category = e.currentTarget.dataset.id
+            const menuCategory = menu.filter(function(menuItem){
+                if(menuItem.category === category){
+                    return menuItem;
+                }
+            });
+            if(category === "todos"){
+                displayMenuItems(menu);
+            }else {
+                displayMenuItems(menuCategory);
             }
         });
-        if(category === "todos"){
-            displayMenuItems(menu);
-        }else {
-            displayMenuItems(menuCategory);
-        }
     });
 });
 
