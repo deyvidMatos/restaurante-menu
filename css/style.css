@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #3b3514;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+* body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+* body .menu {
+  width: 75%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+* body .menu .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+* body .menu .title h1 {
+  font-size: 3rem;
+  margin: 20px;
+}
+* body .menu .title .underline {
+  width: 350px;
+  height: 3px;
+  margin: 20px;
+  margin-top: 0px;
+  background: rgb(149, 139, 177);
+  background: linear-gradient(260deg, rgba(149, 139, 177, 0) 0%, #F5DB49 50%, rgba(193, 119, 169, 0) 100%);
+}
+* body .menu .btn-container .filter-btn {
+  font-size: 1.1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #C2AD3A;
+  background: transparent;
+  border: solid 2px #C2AD3A;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 20px;
+  cursor: pointer;
+}
+* body .menu .btn-container .filter-btn:hover {
+  background-color: #C2AD3A;
+  color: white;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+}
+* body .menu .section-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+* body .menu .section-center .menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+* body .menu .section-center .menu-item .photo {
+  max-width: 300px;
+  border: solid 3px #F5DB49;
+  border-radius: 20px;
+}
+* body .menu .section-center .menu-item .item-info {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+* body .menu .section-center .menu-item .item-info header {
+  display: flex;
+  justify-content: space-between;
+}
+* body .menu .section-center .menu-item .price {
+  color: #C2AD3A;
+}
+* body .menu .section-center .menu-item:hover {
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+/*# sourceMappingURL=style.css.map */
