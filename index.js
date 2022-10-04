@@ -198,20 +198,35 @@ window.addEventListener("DOMContentLoaded", function(){
     });
 });
 
+// btn abrir modal
+function modalBtn(){
+    var modal = document.querySelector(".creation-invisible");
+
+    modal.classList.toggle("creation-visible");
+    modal.classList.toggle("creation-invisible");
+};
+function closeModal(){
+    var modal = document.querySelector(".creation-visible");
+
+    modal.classList.toggle("creation-visible");
+    modal.classList.toggle("creation-invisible");
+};
+
+//  display dos items
 function displayMenuItems(menuItems){
     let displayMenu = menuItems.map(function (item){
         return `<article class="menu-item">
-        <img src=${item.img} alt=${item.title} class="photo">
-        <div class="item-info">
-            <header>
-                <h4>${item.title}</h4>
-                <h4 class="price">R$${item.price}</h4>
-            </header>
-            <p class="item-text">
-            ${item.descr}
-            </p>
-        </div>
-    </article>`;
+                    <img src=${item.img} alt=${item.title} class="photo">
+                    <div class="item-info">
+                        <header>
+                            <h4>${item.title}</h4>
+                            <h4 class="price">R$${item.price}</h4>
+                        </header>
+                        <p class="item-text">
+                            ${item.descr}
+                        </p>
+                    </div>
+                </article>`;
     });
     displayMenu = displayMenu.join("");
     sectionCenter.innerHTML = displayMenu;

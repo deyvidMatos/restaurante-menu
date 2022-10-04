@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 0.2s;
   color: #3b3514;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -89,6 +90,90 @@
 }
 * body .menu .section-center .menu-item:hover {
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+}
+* body .creation-invisible {
+  position: fixed;
+}
+* body .creation-visible {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  background-color: rgba(184, 135, 11, 0.24);
+  backdrop-filter: blur(30px);
+}
+* body .creation-visible h1 {
+  padding: 15px 25px;
+  background-color: darkgoldenrod;
+  border-radius: 20px 20px 0px 0px;
+}
+* body .creation-visible form {
+  width: 50%;
+  padding: 5%;
+  border-radius: 20px;
+  background-color: rgb(218, 167, 39);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+* body .creation-visible form input {
+  width: 80%;
+  margin: 3%;
+  padding: 10px;
+  border-radius: 20px;
+}
+* body .creation-visible form #closerBtn {
+  margin: 2%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 6px 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: red;
+  border: 2px solid red;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+* body .creation-visible form #closerBtn:hover {
+  background-color: red;
+  color: white;
+}
+* body .creation-visible form #addBtn {
+  width: 200px;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 20px;
+  border: 2px solid green;
+  color: green;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+* body .creation-visible form #addBtn:hover {
+  background-color: green;
+  color: white;
+}
+* body .creator-container {
+  display: flex;
+  align-items: center;
+}
+* body .creator-container #modalBtn {
+  padding: 10px 15px;
+  margin: 20px;
+  font-size: 1.8rem;
+  color: darkgoldenrod;
+  border: 2px solid darkgoldenrod;
+  background: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+* body .creator-container #modalBtn:hover {
+  background: darkgoldenrod;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
