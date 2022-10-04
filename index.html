@@ -17,16 +17,27 @@
             <h1>adicionar sabor</h1>
             <form>
                 <button id="closerBtn" type="button" onclick="closeModal()">X</button>
+                
                 <label for="item-title">Sabor: </label>
-                <input type="text" id="item-title" placeholder="adicionar o sabor">
+                <input type="text" id="item-title" name="item-title" placeholder="adicionar o sabor">
+                
                 <label for="item-categoy">Categoria: </label>
-                <input type="text" id="item-categoy" placeholder="adicionar a categoria">
+                <select id="item-categoy" name="item-categoy" aria-placeholder="selecione a categoria">
+                    <option value="tradicional">tradicional</option>
+                    <option value="Gourmet">Gourmet</option>
+                    <option value="Doce">Doce</option>
+                    <option value="Especial">Especial</option>
+                </select>
+
                 <label for="item-price">Preço: </label>
-                <input type="text" id="item-price" placeholder="adicionar a preço">
+                <input type="text" id="item-price" name="item-price" placeholder="adicionar a preço">
+                
                 <label for="item-img">Imagem: </label>
-                <input type="text" id="item-img" placeholder="adicionar a imagem">
+                <input type="text" id="item-img" name="item-img" placeholder="adicionar a imagem">
+
                 <label for="item-decr">Descrição: </label>
-                <input type="text" id="item-decr" placeholder="adicionar a descrição">
+                <input type="text" id="item-decr" name="item-decr" placeholder="adicionar a descrição">
+                
                 <button id="addBtn" type="button" onclick="addPizza()">adicionar</button>
             </form>
         </section>
@@ -43,6 +54,5 @@
             <div class="section-center">
             </div>
         </section>
-        
     </body>
 </html>

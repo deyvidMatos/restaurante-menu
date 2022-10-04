@@ -212,6 +212,33 @@ function closeModal(){
     modal.classList.toggle("creation-invisible");
 };
 
+// formulario de adição
+function addPizza(){
+    // form informaçoes
+    var inputPrice = document.querySelector("#item-price[name='item-price']").value;
+    var inputCateg = document.querySelector("#item-categoy[name='item-categoy']").value;
+    var inputTitle = document.querySelector("#item-title[name='item-title']").value;
+    var inputImg = document.querySelector("#item-img[name='item-img']").value;
+    var inputDescr = document.querySelector("#item-decr[name='item-decr']").value;
+
+    var newPizza = ({id: 1,
+        title: inputTitle,
+        category: inputCateg,
+        price: inputPrice,
+        img: inputImg,
+        descr: inputDescr});
+        
+    verificationToAdd()
+
+    menu.push(newPizza)
+};
+
+function verificationToAdd(){
+    alert('confirmação de adição \nOBS:para ver nova adiçao procure no tipo ex:tradicional');
+    closeModal();
+};
+
+
 //  display dos items
 function displayMenuItems(menuItems){
     let displayMenu = menuItems.map(function (item){
@@ -220,7 +247,7 @@ function displayMenuItems(menuItems){
                     <div class="item-info">
                         <header>
                             <h4>${item.title}</h4>
-                            <h4 class="price">R$${item.price}</h4>
+                            <h4 class="price">R$ ${item.price}</h4>
                         </header>
                         <p class="item-text">
                             ${item.descr}

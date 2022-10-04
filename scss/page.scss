@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: .2s;
     color: $darkColor;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     body{
@@ -29,7 +28,7 @@
                     margin: 20px;
                 }
                 .underline{
-                    width: 350px;
+                    width: 100%;
                     height: 3px;
                     margin: 20px;
                     margin-top: 0px;
@@ -93,6 +92,7 @@
         }
         .creation-invisible{
             position: fixed;
+            visibility: hidden;
         }
         .creation-visible{
             position:absolute;
@@ -123,6 +123,12 @@
                     margin: 3%;
                     padding: 10px;
                     border-radius: 20px;
+                }
+                #item-categoy{
+                    width: 80%;
+                    margin: 3%;
+                    padding: 10px;
+                    border-radius: 20px 20px 0px 0px;
                 }
                 #closerBtn{
                     margin: 2%;
@@ -176,4 +182,22 @@
             }
         }
     }
+}
+// telas 
+@media (max-width:769px) {
+    .creation-visible{
+        form{
+            width: 90% !important;
+        }
+    }
+}
+@media (max-width:375px) {
+    .creation-visible{
+        form{
+            width: 100% !important;
+        }
+    }
+    .section-center, .menu-item, .photo{
+                max-width: 100% !important;
+            }
 }
