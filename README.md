@@ -1,14 +1,37 @@
-# **Mini Projeto restaurante**
-
-### *O que é?*
-- mini projeto de demonstração de habilidades baseado em cardápio de restaurante, nele foi utilizado botões dinâmicos e items dinâmicos, de acordo com a categoria do item ele vai mostra os botões para filtrar.
-
-### *Contem:*
-- filtro de categoria
-- Pode criar novos itens
+# Restaurante Menu
+De uma olhada no meu trabalho 🐱‍🏍
 
 ---
-![agradecimento](https://static.imgs.app/content/assetz/uploads/2017/10/gif-do-garoto-menino-dando-joinha.gif)
 
+> ## *Usados:*
+> - javascript;
+> - HTML;
+> - Css;
+> - Sass;
 
-valeu!
+> ## *Serviços:*
+> - GitHub;
+> - GitHub Pages;
+
+---
+
+## Funcionamento 🔎
+Ao acessar a pagina, podera pesquizar entre as os filtros de sabores de pizza e criar uma nova pizza
+![image](https://github.com/deyvidMatos/landing-page/blob/main/image/MenuRestaurante.png)
+
+---
+
+> ## *Uso:*
+> - Mostrar abilidae no conhencimento no ReactJs;
+> - filtrar sabores;
+> - criar novos;
+
+> ## *Links:*
+> - deploy: Vai La ver: https://deyvidmatos.github.io/landing-page/pages/menuRestaurante/restaurant.html
+
+> ## *Versão:*
+>  1.0.0.0
+
+> ## *Autor:*
+> - Deyvid Matos
+> - Segue ai o meu git😁
